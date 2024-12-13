@@ -1,0 +1,112 @@
+
+
+what DOM ?
+DOM stands for Document Object Model
+
+ it's a way for web browsers to represent and control HTML tags
+
+ But why we need DOM ?
+ in html we don't have control over tag like we want to to show or hide some detail
+ on click of a button 
+ we are not able do it with  html so we need to take help from DOM 
+
+
+ what is DOM manipulation ?
+ page me kuch bhi change krna ya manipulate krna use kam DOM manipulation kahte ha.
+
+ access ===> reach ====>selection===>change 
+
+
+How to access element ?
+1. selection of element
+    document.getElementById
+    document.getElementsByTagName
+    document.getElementsByClassName
+    document.querySelector('h1');
+    ,document.querySelector('#test');
+    ,document.querySelector('.test'); 
+    document.querySelector('h1');
+
+
+modifying element in javascript
+--------------------------------
+1. textContent : will use textContent for only text because it will not understand html tags 
+2. innerHTML : will use when we have to use html tags 
+
+var btn=document.querySelector("button");
+btn.textContent="Starting..."
+
+var h1=document.querySelector('p');
+h1.textContent="hello"
+h1.innerHTML='<i>Helloe</i>'
+
+
+
+How to change css of element
+-----------------------------
+var h1=document.querySelector('h1');
+h1.style.color=red; ----> error because js considure it as keyword
+
+var h1=document.querySelector('h1');
+h1.style.color='red';
+h1.style.fontFamily="Courier New";
+
+
+how to add and remove class to element
+----------------------------
+var h1=document.querySelector('h1');
+h1.classList.add('test');
+
+var h1=document.querySelector('h1');
+h1.classList.remove('test');
+
+
+
+creating and deleting element
+-----------------------------
+
+creating of element will be done in part = creating + adding in page 
+
+creating
+------------
+var h1=document.createElement('h1');
+h1.textContent="hello";
+h1.classList.add("test");
+
+
+adding 
+-------
+document.querySelector("body").appendChild(h1);
+
+
+
+remove
+------
+var btn=document.querySelector("button");
+btn.remove();
+
+--------------or-----------------------------
+var btn=document.querySelector("button");
+document.querySelector("body").removeChild(btn);
+
+
+
+Event Handling in JS
+---------------------
+change in state of elemt in called event : 'element me agar kuch bhi change hoga to event 
+occur hoga' 
+
+if we haven't put listiner in perticular event then even will be ignored
+if we put listiner on event then, when event occur listiner will work 
+
+
+var btn=document.querySelector("button");
+btn.addEventListener('click',function(){
+    alert()
+});
+
+
+how to consume api in javascript
+----------------------------------
+using fetch() for API Calls
+

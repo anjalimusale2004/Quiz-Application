@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!--Landing Page-->
+    <section class="landing-page">
+
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vacation-heading">Welcome To Master Quiz</h1>
+                <a href="#quiz-packages" class="btn">Start Now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--header section-->
+    <header class="quiz-header" id="quiz-header">
+        <h1 class="heading">Master Quiz</h1>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quiz</a>
+        <a href="#Performer">Top Performers</a>
+        <a href="#notes">Notes</a>
+    </nav>
+
+
+    <section class="quiz-packages-section" id="quiz-packages">
+        <h1 class="quiz-heading">Coding Quiz</h1>
+        <p class="quiz-text">This website, Master Quiz, is a comprehensive platform for interactive learning and knowledge enhancement. It features a welcoming landing page and a clear navigation structure, guiding users through various sections, including coding quizzes, top performers, and subject notes. The Quiz Packages section offers quizzes on programming topics like Java, Python, JavaScript, and .Net, with engaging visuals and call-to-action buttons. The Top Performers section highlights achievers, fostering community motivation, while the Subject Notes section provides additional resources for learning. The platform is aesthetically designed with responsive layouts, enhancing user experience and accessibility, making it a robust tool for learners.</p>
+        <div class="package-wrapper">
+            <div class="package-card">
+                <img src=".//images/java.jpg" alt="">
+                <p class="card-heading">Java</p>
+                <p class="card-text">Java one of the most widely used programming languages. This quiz is perfect for testing your understanding of core concepts like OOP principles,  and more. Dive in and enhance your Java skills for just ₹50</p> 
+                <p class="card-heading">50₹</p>
+                <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/python.jpg" alt="">
+                <p class="card-heading">Python</p>
+                <p class="card-text">Explore the versatile world of Python with this engaging quiz. Test your knowledge of syntax, libraries, and applications in areas like data science and web development. Sharpen your skills at an affordable price of ₹40</p>
+                <p class="card-heading">40₹</p>
+                <button class="btn" onclick="startQuiz('python')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/js.png" alt="">
+                <p class="card-heading">JavaScript</p>
+                <p class="card-text">Challenge yourself with the JavaScript quiz, ideal for learners eager to excel in web development. Cover topics like DOM manipulation, ES6 features, and more. Start your journey to becoming a front-end expert for just ₹30</p>
+                <p class="card-heading">30₹</p>
+                <button class="btn"onclick="startQuiz('javascript')">Take Quiz</button>
+            </div>
+            <div class="package-card">
+                <img src=".//images/net.png" alt="">
+                <p class="card-heading">.Net</p>
+                <p class="card-text">Dive into the world of .Net, a powerful framework for building robust applications. This quiz is tailored to test your understanding of .Net basics and advanced concepts. Begin your learning adventure for only ₹20</p>
+                <p class="card-heading">20₹</p>
+                <button class="btn"onclick="startQuiz('net')">Take Quiz</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="Performer-quiz-section" id="Performer">
+        <h1 class="quiz-heading">Top Performer</h1>
+        <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for excellence</p>
+        <div class="image-card">
+            <img src=".//images/m1.jpeg" alt="">
+            <img src=".//images/m2.jpg" alt="">
+            <img src=".//images/m3.jpg" alt="">
+            <img src=".//images/m4.jpg" alt="">
+            <img src=".//images/m5.jpg" alt="">
+            <img src=".//images/m6.jpg" alt="">
+        </div>
+        
+    </section>
+
+
+    <section class="notes-section" id="notes">
+        <h1 class="quiz-heading">Subject Notes</h1>
+        <p class="quiz-text">Click on a subject to explore the study materials and download the notes in PDF format.</p>
+        
+        <div class="notes-div">
+            <!-- Java Notes -->
+            <div class="notes-wrapper">
+                <a href="java-notes.html">
+                    <img src=".//images/java.jpg" alt="Java Notes">
+                    <p>Java Notes</p>
+                </a>
+            </div>
+
+            <!-- Python Notes -->
+            <div class="notes-wrapper">
+                <a href="python-notes.html">
+                    <img src=".//images/python.jpg" alt="Python Notes">
+                    <p>Python Notes</p>
+                </a>
+            </div>
+
+            <!-- React Notes -->
+            <div class="notes-wrapper">
+                <a href="react-notes.html">
+                    <img src=".//images/react.png" alt="React Notes">
+                    <p>React Notes</p>
+                </a>
+            </div>
+
+            <!-- Spring Notes -->
+            <div class="notes-wrapper">
+                <a href="spring-notes.html">
+                    <img src=".//images/spring.png" alt="Spring Notes">
+                    <p>Spring Notes</p>
+                </a>
+            </div>
+
+            <!-- JavaScript Notes -->
+            <div class="notes-wrapper">
+                <a href="javascript-notes.html">
+                    <img src=".//images/js.png" alt="JavaScript Notes">
+                    <p>JavaScript Notes</p>
+                </a>
+            </div>
+
+            <!-- .Net Notes -->
+            <div class="notes-wrapper">
+                <a href="net-notes.html">
+                    <img src=".//images/net.png" alt=".Net Notes">
+                    <p>.Net Notes</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    
+
+    <footer class="footer-section">
+        <small>All Right Reserver</small>
+        <small>Developed  & Maintained By
+            <a href="https://www.linkedin.com/in/anjali-musale-062774246" target="_blank">Musale Anjali</a>
+        </small>
+    </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
